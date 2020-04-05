@@ -6,6 +6,7 @@ import spiner from './spiner.js';
 import { infiniteScroll } from './infiniteScrollWithIntersectionObserver.js';
 
 export function handleInputSearchQuery(event) {
+  event.preventDefault();
   clearUlGallery();
   services.resetPage();
   const inputValue = event.target.value;
@@ -19,7 +20,6 @@ export function handleInputSearchQuery(event) {
   services
     .fetchImages()
     .then(imagesArray => {
-      // console.log(imagesArray);
       drawMarkup(imagesArray);
       spiner.hide();
     })

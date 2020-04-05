@@ -1,4 +1,11 @@
-const makeGridItem = ({ webformatURL, likes, views, comments, downloads }) => {
+const makeGridItem = ({
+  webformatURL,
+  largeImageURL,
+  likes,
+  views,
+  comments,
+  downloads,
+}) => {
   const li = document.createElement('li');
   li.classList.add('grid-item');
   li.classList.add('gallery-item');
@@ -9,6 +16,7 @@ const makeGridItem = ({ webformatURL, likes, views, comments, downloads }) => {
   const img = document.createElement('img');
   img.classList.add('image');
   img.src = webformatURL;
+  img.setAttribute('data-largeurl', webformatURL);
 
   const divStats = document.createElement('div');
   divStats.classList.add('stats');
@@ -58,7 +66,6 @@ const makeGridItem = ({ webformatURL, likes, views, comments, downloads }) => {
   divPhotoCard.append(img, divStats);
 
   li.appendChild(divPhotoCard);
-
   return li;
 };
 export default makeGridItem;

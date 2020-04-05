@@ -1,8 +1,12 @@
-// import './css/styles.css';
+import './css/styles.css';
 import './css/spiner.css';
 import './css/masonry.css';
+import './css/basickLightBox.css';
 import { refs } from './js/refs.js';
 import { formInputListener } from './js/eventListeners.js';
+import { ulGalleryListener } from './js/eventListeners.js';
+import { lightBoxListener } from './js/eventListeners.js';
+lightBoxListener();
 // import { handleInputSearchQuery } from './js/handleInputSearchQuery.js';
 // import imagesLoaded from './js/masonry.js';
 // import makeGridItem from './js/makeGridItem.js';
@@ -17,4 +21,4 @@ import { formInputListener } from './js/eventListeners.js';
 // PNotify.defaults.width = '280px';
 // PNotify.defaults.delay = 3000;
 
-import { infiniteScroll } from './js/infiniteScrollWithIntersectionObserver.js';
+// import { infiniteScroll } from './js/infiniteScrollWithIntersectionObserver.js';

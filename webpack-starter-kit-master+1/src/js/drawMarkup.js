@@ -7,7 +7,6 @@ import makeGridItem from './makeGridItem.js';
 import { masonryInstance } from './masonry.js';
 
 export function drawMarkup(imagesArray) {
-  // clearUlGallery();
   const images = imagesArray.map(makeGridItem);
   refs.ulGallery.append(...images);
 
