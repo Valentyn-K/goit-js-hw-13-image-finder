@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-form::scr {
+
+}
+
+.gallery {
+  margin: 20px 0 20px;
+  padding: 0;
+  list-style: none;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery-item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.photo-card {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.stats {
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+.stats-item {
+  /* display: block; */
+  margin: 0;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item:hover .stats {
+  opacity: 0.7;
+}
+
+.stats-item:hover .material-icons {
+  color: blue;
+}
+
+.load-more-hidden {
+  display: none;
+}
+
+.load-more-visible {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; 
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  font-feature-settings: 'liga';
+} */
