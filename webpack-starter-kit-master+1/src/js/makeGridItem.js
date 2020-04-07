@@ -6,6 +6,9 @@ const makeGridItem = ({
   comments,
   downloads,
 }) => {
+  // const gridSizer = document.createElement('li');
+  // gridSizer.classList.add('grid-sizer');
+
   const li = document.createElement('li');
   li.classList.add('grid-item');
   li.classList.add('gallery-item');

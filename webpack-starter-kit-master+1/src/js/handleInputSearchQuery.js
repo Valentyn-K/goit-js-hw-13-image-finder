@@ -20,6 +20,8 @@ export function handleInputSearchQuery(event) {
   services
     .fetchImages()
     .then(imagesArray => {
+      // clearUlGallery();
+
       drawMarkup(imagesArray);
       spiner.hide();
     })
