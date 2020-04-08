@@ -5,7 +5,7 @@ import { refs } from './refs.js';
 
 export const masonryInstance = new Masonry('#gallery', {
   itemSelector: '.grid-item',
-  columnWidth: refs.liGridSizer,
+  columnWidth: '.grid-sizer',
   percentPosition: true,
   gutter: 10,
   transitionDuration: '0.8s',
